@@ -8,7 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('videos.urls', namespace='videos')),
-    path('docs/', include_docs_urls(title='VideoAPI')),
+    path('', include_docs_urls(title='VideoAPI')),
     path('schema', get_schema_view(
         title="VideoAPI",
         description="API for the VideoAPI",
